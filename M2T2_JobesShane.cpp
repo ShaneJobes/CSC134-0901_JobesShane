@@ -1,5 +1,5 @@
 // CSC 134
-// M2T1 - Apple Sales Part 2
+// M2T2 - Apple Sales Part 3
 // 02/09/2025
 // Shane Jobes
 
@@ -15,6 +15,9 @@ int main()
     // number of apples owned
     int apples = 100;
 
+    //number of apples user wants to buy
+    int userApples;
+
     // price per apple
     double pricePerApple = 0.25;
 
@@ -27,7 +30,15 @@ int main()
     cout << "’s apple orchard." << endl;
     cout << "We have " << apples << " apples available." << endl;
     cout << "They are $" << pricePerApple << " per apple." << endl;
+    
+    // get user input for desired apples
+    cout << "How many apples do you want to purchase?" << endl;
+    cin >> userApples;
+
+    // calculate how much it will cost user
+    double userCost = userApples * pricePerApple;
+    
     // Fix decimal precision to show 2 places after decimal
     cout << fixed << setprecision(2); 
-    cout << "The total for all " << apples << " apples is $" << totalPrice << "!" << endl;
+    cout << "The total for " << userApples << " apples is $" << userCost << "!" << endl;
 }

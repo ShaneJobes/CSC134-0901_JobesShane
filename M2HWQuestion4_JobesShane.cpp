@@ -11,7 +11,7 @@ int main()
 
     //Declare variables
     string letsGo, school, team, cheerOne, cheerTwo;
-    letsGo = "Let's Go";
+    letsGo = "Let's Go ";
     school = "FTCC";
     team = "Trojans";
     cheerOne = letsGo + school;

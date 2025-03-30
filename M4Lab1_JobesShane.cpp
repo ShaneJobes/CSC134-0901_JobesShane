@@ -1,6 +1,6 @@
 // CSC 134
-// M4T1 While Loops
-// 02/23/2025
+// M4Lab1 Nested Loops
+// 03/30/2025
 // Shane Jobes
 
 #include <iostream>

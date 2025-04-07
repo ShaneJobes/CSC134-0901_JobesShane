@@ -28,5 +28,5 @@ int square(int num)
 // print the answer to square
 void printAnswer(int number, int result)
 {
-    cout << number << "squared equals: " << result << endl;
+    cout << number << " squared equals: " << result << endl;
 }

@@ -13,37 +13,26 @@ using namespace std;
 // functions here.
 double getLength();
 double getWidth();
-double getArea(int length, int width);
-void displayData(int area);
+double getArea(double length, double width);
+void displayData(double area);
 
 int main()
 {
 	// This program calculates the area of a rectangle.
-	// TODO: fix any syntax errors
-	
-   double length,    // The rectangle's length
+    double length,    // The rectangle's length
           width,     // The rectangle's width
-          area;      // The rectangle's area
-          
-   // Get the rectangle's length.
-   length = getLength();
-   
-   // Get the rectangle's width.
-   width = getWidth();
-   
-   // Get the rectangle's area.
-   area = getArea(length, width);
-   
-   // Display the rectangle's data.
-   displayData(area);
-          
-   return 0;
+          area;      // The rectangle's area         
+    // Get the rectangle's length.
+    length = getLength();
+    // Get the rectangle's width.
+    width = getWidth();
+    // Get the rectangle's area.
+    area = getArea(length, width);
+    // Display the rectangle's data.
+    displayData(area);        
+    return 0;
 }
-
-//***************************************************
-// TODO: write the getLength, getWidth, getArea,    *
-// and displayData functions below.                 *
-//********************************************
+// Get user input for length
 double getLength()
 {
     double length = 0;
@@ -51,7 +40,7 @@ double getLength()
     cin >> length;
     return length;
 }
-
+// Get user input for width
 double getWidth()
 {
     double width = 0;
@@ -59,14 +48,14 @@ double getWidth()
     cin >> width;
     return width;
 }
-
+// Calculate area based off user input
 double getArea(double length, double width)
 {
     double area = 0;
     area = length * width;
     return area;
 }
-
+// Print area
 void displayData(double area)
 {
     cout << "The total area of the rectangle is " << area << " ft." << endl;

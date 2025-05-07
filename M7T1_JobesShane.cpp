@@ -61,7 +61,7 @@ int main()
 {
     Restaurant lunch_place = Restaurant("Mi Casita", 3.5);
     Restaurant breakfast_place = Restaurant("Waffle House", 2.0);
-    Restaurant dinner_place = Restaurant("Bubbas 33, 4.5");
+    Restaurant dinner_place = Restaurant("Bubbas 33", 4.5);
     cout << "Breakfast Restaurant:" << endl;
     breakfast_place.printInfo();
     cout << "Lunch Restaurant:" << endl;

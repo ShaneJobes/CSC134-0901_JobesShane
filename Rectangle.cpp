@@ -3,46 +3,40 @@
 // 05/07/2025
 // Shane Jobes
 
-#ifndef RECTANGLE_H
-#define RECTANGLE_H
+
+#include <iostream>
+#include "Rectangle.h"
+#include <cstdlib>
+using namespace std;
 
 
-class Rectangle()
+Rectangle::Rectangle()
 {
-private:
-    double width;
-    double length;
-public:
-    Rectangle(double l, double w)
-    {
-        length = l;
-        width = w;
-    }
-    void setWidth(double w)
+    width = 0.0;
+    length = 0.0;
+}
+void Rectangle::setWidth(double w)
+{
+    if (w >= 0)
     {
         width = w;
     }
+    else 
+    {
+        cout << "INVALID WIDTH \n";
+        exit(EXIT_FAILURE);
+    }
+}
 
-    void setLength(double l);
+void Rectangle::setLength(double l)
+{
+    if (l >= 0)
     {
         length = l;
     }
-    
-    double getWidth() const;
+    else 
     {
-        return width;
+        cout << "INVALID LENGTH \n";
+        exit(EXIT_FAILURE);
     }
-    
-    double getLength() const;
-    {
-        return length;
-    }
-    
-    double getArea() const;
-    {
-        double area = length * width;
-
-    }
-};
-
-#endif
+}

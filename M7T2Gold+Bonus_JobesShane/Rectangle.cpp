@@ -1,5 +1,5 @@
 // CSC 134
-// M7T2
+// M7T2 - Gold+Bonus
 // 05/07/2025
 // Shane Jobes
 

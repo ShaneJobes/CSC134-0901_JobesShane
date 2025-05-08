@@ -11,7 +11,7 @@
                 "Main.cpp",
                 "Rectangle.cpp",
                 "-o",
-                "/workspaces/CSC134-0901_JobesShane/Main"
+                "/workspaces/CSC134-0901_JobesShane/M7T2Gold+Bonus_JobesShane"
             ],
             "group": "build",
             "problemMatcher": [

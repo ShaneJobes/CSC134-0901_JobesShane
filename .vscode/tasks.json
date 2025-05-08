@@ -2,20 +2,22 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build C++ file",
+            "label": "C/C++: g++-9 build active file",
             "type": "shell",
-            "command": "g++",
+            "command": "/usr/bin/g++-9",
             "args": [
+                "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "Main.cpp",
+                "Rectangle.cpp",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "/workspaces/CSC134-0901_JobesShane/Main"
             ],
             "group": "build",
             "problemMatcher": [
                 "$gcc"
             ],
-            "detail": "A simple g++ build task"
+            "detail": "Compile Main.cpp and Rectangle.cpp together"
         },
         {
             "type": "cppbuild",

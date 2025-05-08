@@ -12,12 +12,12 @@ class Rectangle
         void setLength(double);
 
         double getWidth() const
-        { return width; }
+            { return width; }
 
         double getLength() const
-        { return length; }
+            { return length; }
 
         double getArea() const
-        { return width * length; }
+            { return width * length; }
 };
 #endif

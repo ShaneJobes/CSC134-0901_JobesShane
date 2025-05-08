@@ -31,9 +31,9 @@ void Rectangle::setWidth(double w)
 void Rectangle::setLength(double l)
 {
     if (l >= 0)
-    {
+    
         length = l;
-    }
+    
     else 
     {
         cout << "INVALID LENGTH \n";
